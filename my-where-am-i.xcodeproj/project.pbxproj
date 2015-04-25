@@ -13,6 +13,10 @@
 		233D994E1AEBC5300041C7DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233D994D1AEBC5300041C7DE /* Images.xcassets */; };
 		233D99511AEBC5300041C7DE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233D994F1AEBC5300041C7DE /* LaunchScreen.xib */; };
 		233D995D1AEBC5300041C7DE /* my_where_am_iTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D995C1AEBC5300041C7DE /* my_where_am_iTests.swift */; };
+		233D99671AEBC5430041C7DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233D99661AEBC5430041C7DE /* MapKit.framework */; };
+		233D99691AEBC5490041C7DE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233D99681AEBC5490041C7DE /* CoreLocation.framework */; };
+		233D996B1AEBC5A60041C7DE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D996A1AEBC5A60041C7DE /* BackgroundView.swift */; };
+		233D996E1AEBC5EE0041C7DE /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233D996D1AEBC5EE0041C7DE /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		233D99561AEBC5300041C7DE /* my-where-am-iTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "my-where-am-iTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		233D995B1AEBC5300041C7DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		233D995C1AEBC5300041C7DE /* my_where_am_iTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = my_where_am_iTests.swift; sourceTree = "<group>"; };
+		233D99661AEBC5430041C7DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		233D99681AEBC5490041C7DE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		233D996A1AEBC5A60041C7DE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		233D996D1AEBC5EE0041C7DE /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233D99691AEBC5490041C7DE /* CoreLocation.framework in Frameworks */,
+				233D99671AEBC5430041C7DE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +69,8 @@
 		233D99381AEBC5300041C7DE = {
 			isa = PBXGroup;
 			children = (
+				233D99681AEBC5490041C7DE /* CoreLocation.framework */,
+				233D99661AEBC5430041C7DE /* MapKit.framework */,
 				233D99431AEBC5300041C7DE /* my-where-am-i */,
 				233D99591AEBC5300041C7DE /* my-where-am-iTests */,
 				233D99421AEBC5300041C7DE /* Products */,
@@ -82,6 +94,7 @@
 				233D994A1AEBC5300041C7DE /* Main.storyboard */,
 				233D994D1AEBC5300041C7DE /* Images.xcassets */,
 				233D994F1AEBC5300041C7DE /* LaunchScreen.xib */,
+				233D996C1AEBC5DC0041C7DE /* Extensions */,
 				233D99441AEBC5300041C7DE /* Supporting Files */,
 			);
 			path = "my-where-am-i";
@@ -110,6 +123,15 @@
 				233D995B1AEBC5300041C7DE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		233D996C1AEBC5DC0041C7DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				233D996A1AEBC5A60041C7DE /* BackgroundView.swift */,
+				233D996D1AEBC5EE0041C7DE /* UIColor.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +234,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				233D996B1AEBC5A60041C7DE /* BackgroundView.swift in Sources */,
+				233D996E1AEBC5EE0041C7DE /* UIColor.swift in Sources */,
 				233D99491AEBC5300041C7DE /* ViewController.swift in Sources */,
 				233D99471AEBC5300041C7DE /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +433,7 @@
 				233D99621AEBC5300041C7DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		233D99631AEBC5300041C7DE /* Build configuration list for PBXNativeTarget "my-where-am-iTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +442,7 @@
 				233D99651AEBC5300041C7DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
